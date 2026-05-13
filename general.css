@@ -1,0 +1,105 @@
+*{
+  padding:0;
+  margin:0;
+  border:none;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body{
+  margin:150px 20px 0 20px;
+  background-image: radial-gradient(rgba(80, 83, 244, 0.2), rgb(31,31,31));
+  background-repeat: no-repeat;
+  color:rgb(238,238,238);
+  background-color: rgb(31,31,31);
+  font-family: Sora, Verdana;
+}
+
+.load-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-text p{
+  font-size:12px;
+  line-height:20px;
+  font-family: Michroma, Sora, Verdana;
+  white-space: nowrap;
+  display: inline-block;
+  border-right:5px solid white;
+  width:340px;
+  overflow: hidden;
+  animation:
+    typing 2s steps(42),
+    cursor .4s step-end infinite alternate;
+}
+
+/*cursor blinking animation*/
+@keyframes cursor{
+  50% {border-color:transparent};
+}
+
+/*typing animation*/
+@keyframes typing{
+  from {width:0}
+  from{opacity: 0;}
+}
+
+.arrow-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(120, 80, 244);
+  font-weight:bold;
+  margin:100px 0 200px 0;
+}
+
+.arrow-container img{
+  width:80px;
+}
+
+.arrow-container img:hover{
+  background-color: rgb(29, 29, 29);
+  border-radius:50%;
+  transition: background-color 0.5s ease;
+}
+
+h1{
+  font-family: Michroma, Sora, Verdana;
+}
+
+/*fonts-upload*/
+
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../Fonts/michroma/michroma-latin-regular.woff2");
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('../Fonts/Sora/Sora[wght].woff2') format('woff2-variations');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*end*/
+
+
+@media screen and (width <= 600px){
+  .load-text p{
+    visibility: hidden;
+    pointer-events: none;
+  }
+  body{
+    margin-top:100px;
+  }
+}

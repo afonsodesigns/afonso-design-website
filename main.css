@@ -1,0 +1,198 @@
+#projects{
+  background-color: transparent;
+  height:120px;
+}
+
+.projects-title{
+  font-size:30px;
+  font-family: Michroma, Sora, Verdana;
+  margin:0 0 40px 20px;
+}
+
+.short-portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.port-img-container img{
+  min-width:200px;
+  max-width:600px;
+  border-radius: 5px;
+}
+
+.port-img-container{
+  position: relative;
+  cursor: pointer;
+}
+
+.port-img-container:hover .img-details{
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.img-details{
+  background-color: rgba(31, 31, 31, 0.8);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border:2px solid rgb(120, 80, 244);
+  border-radius:5px;
+  display: none;
+}
+
+.img-details-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  flex-direction: column;
+  gap:20px;
+  top:45%;
+  left:45%;
+  translate:-45%;
+}
+
+.img-details-items p{
+  font-size: 22px;
+}
+
+.img-details button{
+  padding:15px 25px;
+  font-size:18px;
+  background-color:rgb(17, 17, 17);
+  color:white;
+  text-decoration: none;
+  border-radius:50px;
+  border:2px solid rgb(120, 80, 244);
+  cursor:pointer;
+}
+
+.img-details button:hover{
+  background-color: rgb(120, 80, 244);
+  color:rgb(31,31,31);
+}
+
+.piece-date{
+  display: block;
+  font-size:10px;
+  color:rgb(138, 138, 138);
+}
+
+.piece-name{
+  color:rgb(217, 205, 255);
+}
+
+/*like what you see?*/
+
+.like-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding:20px 0;
+  margin-bottom:20px;
+}
+
+.like-container .like-text{
+  font-size:30px;
+  font-family: Michroma, Sora, Verdana;
+  color:rgba(153, 153, 153, 0.3);
+  padding:10px;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.like-container .more-projects-button a{
+  padding:15px 25px;
+  font-size:22px;
+  background-color:rgb(17, 17, 17);
+  color:white;
+  text-decoration: none;
+  border-radius:50px;
+  border:2px solid rgb(120, 80, 244);
+  box-shadow: 0 0 100px rgb(120, 80, 244);
+}
+
+.more-projects-button a span{
+  color:rgb(120, 80, 244);
+  margin-right:10px;
+}
+
+.more-projects-button a:hover{
+  background-color: rgb(120, 80, 244);
+  color:rgb(17, 17, 17);
+  transition:0.3s ease-in-out;
+  cursor:pointer;
+  box-shadow: none;
+
+}
+
+.more-projects-button a:hover span{
+  color:rgb(17, 17, 17);
+}
+
+/*_______*/
+
+@media screen and (width <= 1250px) {
+  .port-img-container img{
+    max-width:400px;
+  }
+}
+
+
+@media screen and (width <= 1000px) {
+  .port-img-container img{
+    max-width:300px;
+  }
+  .img-details-items p{
+  font-size: 15px;
+}
+
+.img-details button{
+  padding:15px 25px;
+  font-size:18px;
+  background-color:rgb(17, 17, 17);
+  color:white;
+  text-decoration: none;
+  border-radius:50px;
+  border:2px solid rgb(120, 80, 244);
+}
+}
+
+@media screen and (width <= 800px) {
+  .port-img-container img{
+    max-width:250px;
+  }
+  .projects-title{
+    font-size:25px;
+  }
+  .like-container .like-text{
+    font-size:25px;
+  }
+  .more-projects-button{
+    margin-top:15px;
+  }
+  .like-container .more-projects-button a{
+    box-shadow: 0 0 50px rgb(120, 80, 244);
+  }
+}
+
+@media screen and (width <= 600px) {
+  .port-img-container img{
+    max-width:200px;
+  }
+  .projects-title{
+    font-size:20px;
+  }
+}
+
+@media screen and (width <= 400px) {
+  .projects-title{
+    font-size:16px;
+  }
+}

@@ -1,0 +1,110 @@
+#hire_me h3{
+  font-size: 30px;
+  font-family: Michroma, Sora, Verdana;
+  margin-bottom:40px;
+  margin-top:80px;
+}
+
+#hire_me .email-link{
+  display: flex;
+  align-items: center;
+}
+
+#hire_me .email-link .my-email{
+  color:white;
+  text-decoration: none;
+}
+
+#hire_me .email-link .my-email{
+  color:white;
+  cursor: pointer;
+  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-underline-offset: 2px;
+}
+
+#hire_me .email-link .my-email:hover{
+  color:rgb(120, 80, 244);
+  cursor: pointer;
+  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-underline-offset: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+#hire_me svg{
+  margin-right:20px;
+}
+
+.email-link:hover svg{
+  fill:rgb(120, 80, 244);
+  transition: 0.3s ease-in-out;
+}
+
+.email-link{
+  margin-bottom:20px;
+}
+
+.socials-link{
+  display: flex;
+  align-items: center;
+}
+
+.socials-link a{
+  color:white;
+  cursor: pointer;
+  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-underline-offset: 2px;
+}
+.socials-link a:hover{
+  color:rgb(120, 80, 244);
+  cursor: pointer;
+  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-underline-offset: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.instagram-icon{
+  margin-top:20px;
+}
+
+.footer-bot{
+  background-color: rgb(14, 6, 26);
+  padding:30px;
+  margin:80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 22px;
+  margin:100px -20px 0 -20px;
+}
+
+.footer-xl{
+  font-size:30px;
+  font-family: Michroma, Sora, Verdana;
+  font-weight:800;
+  padding: 0 0 15px 0;
+}
+
+.maker{
+  color:rgb(120, 80, 244);
+}
+
+@media screen and (min-width:1200px){
+  #hire_me h3{
+    font-size: 60px;
+  }
+}
+@media screen and (min-width:800px){
+  #hire_me h3{
+    font-size: 45px;
+  }
+}
+
+@media screen and (width <= 600px) {
+  .footer-xl{
+    font-size:18px;
+    padding:0;
+  }
+  .maker{
+    font-size:12px;
+  }
+}

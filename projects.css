@@ -1,0 +1,131 @@
+.grid-container{
+  display: flex;
+  justify-content: center;
+}
+
+.sections-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 500px);
+  align-items: center;
+  justify-items: center;
+}
+
+section a{
+  color:white;
+}
+section a:hover{
+  color:rgb(120, 80, 244);
+  transition:0.6s ease color;
+}
+
+.project-container{
+  width:500px;
+  height:250px;
+  overflow:hidden;
+  border-radius:10px;
+  position: relative;
+  cursor:pointer;
+  border:2px solid rgb(120, 80, 244);
+}
+
+.project-container img{
+  width:500px;
+  height:auto;
+}
+
+.project-container div{
+  position:absolute;
+  z-index:2;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+.project-container div p{
+  font-size:40px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.black-overlay{
+  width:500px;
+  height:250px;
+  position: absolute;
+  z-index:1;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color: rgba(31, 31, 31, 0.7);
+}
+
+.black-overlay a{
+  color:white;
+  text-decoration: none;
+}
+
+.project-container:hover .black-overlay a{
+  background-color: rgba(31, 31, 31, 0.8);
+  transition:0.4s ease-in-out;
+}
+
+.project-container:hover{
+  box-shadow:0 0 50px rgb(120, 80, 244);
+  transition:0.2s ease-in-out;
+} 
+
+.twodani-img{
+  scale:180%;
+}
+
+@media screen and (width <= 1000px){
+  .sections-container {
+    grid-template-columns: repeat(2, 350px);
+  }
+  .project-container{
+    width:350px;
+    height:200px;
+  }
+  .project-container img{
+    width:350px;
+    min-height:200px;
+  }
+  .project-container div p{
+    font-size:30px;
+  }
+}
+@media screen and (width <= 800px){
+  .sections-container {
+    grid-template-columns: repeat(1, 350px);
+  }
+  .project-container{
+    width:350px;
+    height:200px;
+  }
+  .project-container img{
+    width:350px;
+    min-height:200px;
+  }
+  .project-container div p{
+    font-size:30px;
+  }
+}
+@media screen and (width <= 600px){
+  .sections-container {
+    grid-template-columns: repeat(1, 250px);
+  }
+  .project-container{
+    width:250px;
+    height:100px;
+  }
+  .project-container img{
+    width:250px;
+    min-height:100px;
+  }
+  .project-container div p{
+    font-size:20px;
+  }
+  body{
+    margin-top:200px;
+  }
+}

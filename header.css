@@ -1,0 +1,89 @@
+header{
+  font-family: "Michroma", "Sora", "Verdana";
+}
+
+.name-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding:10px;
+  margin: 50px 0 0 0;
+  font-size:60px;
+}
+
+.catch-phrase{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding:5px;
+  font-size: 22px;
+  color:rgb(120, 80, 244);
+}
+
+.carousel{
+  margin:50px auto;
+  width:70%;
+  display: flex;
+  overflow-x: auto;
+  pointer-events: none;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.role-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1em;
+  padding-right:1em;
+  user-select: none;
+  animation: spin 10s linear infinite;
+}
+
+.role-container h5{
+  flex: 0  0 5em;
+  font-size: 10px;
+  padding:0 10px 20px 10px;
+  border-radius:10px;
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes spin{
+  from {translate:0;}
+  to {translate: -100%}
+}
+
+@media screen and (width <= 800px){
+  .name-container{
+    padding:10px;
+    margin: 50px 0 0 0;
+    font-size:40px;
+  }
+  .catch-phrase{
+    font-size: 18px;
+  }
+}
+@media screen and (width <= 600px){
+  .name-container{
+    padding:10px;
+    margin: 50px 0 0 0;
+    font-size:30px;
+  }
+  .catch-phrase{
+    font-size: 15px;
+  }
+}
+@media screen and (width <= 400px){
+  .name-container{
+    padding:10px;
+    margin: 40px 0 0 0;
+    font-size:25px;
+  }
+  .catch-phrase{
+    font-size: 12px;
+  }
+}

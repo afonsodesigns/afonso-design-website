@@ -1,0 +1,15 @@
+*{
+  background-color:rgb(31,31,31);
+  color:white;
+  font-family: Sora, Verdana;
+}
+
+h1{
+  text-align: center;
+  margin-top:100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
