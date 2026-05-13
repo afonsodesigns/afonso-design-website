@@ -145,79 +145,25 @@
 <script>
 (function(){
   const form = document.getElementById('contact-form');
-  const submitBtn = document.getElementById('submit');
   const errEl = document.getElementById('error');
   const successEl = document.getElementById('success');
 
-  function showError(msg){
-    errEl.textContent = msg;
-    errEl.style.display = 'block';
-    successEl.style.display = 'none';
-  }
-  function showSuccess(msg){
-    successEl.textContent = msg;
-    successEl.style.display = 'block';
-    errEl.style.display = 'none';
-  }
-
-  function formDataToObject(fd){
-    const obj = {};
-    for (const [k,v] of fd.entries()){
-      obj[k] = v;
-    }
-    return obj;
-  }
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  // Show client-side validation errors only
+  form.addEventListener('submit', () => {
     errEl.style.display = 'none';
     successEl.style.display = 'none';
-
-    // basic HTML5 validity
-    if (!form.checkValidity()){
+    if (!form.checkValidity()) {
       form.reportValidity();
-      return;
-    }
-
-    // Prevent double submits
-    submitBtn.disabled = true;
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending…';
-
-    try {
-      const fd = new FormData(form);
-      // ensure formId present (redundant but safe)
-      if (!fd.get('formId')) fd.set('formId', 'qwwr4n2tj40');
-
-      // POST to Forminit submit endpoint
-      const resp = await fetch('https://submit.forminit.com/qwwr4n2tj40', {
-        method: 'POST',
-        body: fd,
-        headers: {
-          // Do NOT set Content-Type; let browser set multipart/form-data
-          'Accept': 'application/json'
-        }
-      });
-
-      if (!resp.ok){
-        // try to parse JSON error
-        let text = await resp.text();
-        try { const j = JSON.parse(text); showError(j.message || 'Submission failed'); }
-        catch { showError('Submission failed. Status: ' + resp.status); }
-      } else {
-        // success
-        showSuccess('Thanks — your message was sent.');
-        form.reset();
-      }
-    } catch (err){
-      showError('Network error — please try again.');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = originalText;
+    } else {
+      // Let browser do the POST to Forminit (no fetch) — Forminit will respond/redirect.
+      // Optionally show a local "sending" message while navigation occurs:
+      successEl.textContent = 'Sending…';
+      successEl.style.display = 'block';
     }
   });
 })();
 </script>
+
 
 
 
