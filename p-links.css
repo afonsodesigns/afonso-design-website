@@ -652,3 +652,9 @@ figure{
     max-width:300px;
   }
 }
+@media screen and (max-width: 400px){
+
+  .viewport-img{
+    max-height: 200px;
+  }
+}
