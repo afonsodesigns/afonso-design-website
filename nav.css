@@ -120,3 +120,18 @@ nav .logo-container .brand-logo{
     gap:20px; 
   }
 }
+@media screen and (max-width: 400px){
+  nav a{
+    font-size:10px;
+  }
+  nav .button-container button a{
+    font-size: 12px;
+  }
+  nav .links-container a{
+    padding:8px 10px;
+  }
+  nav{
+    flex-direction:column;
+    gap:20px; 
+  }
+}
