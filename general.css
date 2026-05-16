@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+:root{
+  --main-color:rgb(120, 80, 244);
+}
+/*Added root for main color testing*/
+
 html{
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -54,7 +59,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
   font-weight:bold;
   margin:100px 0 200px 0;
 }
