@@ -1,3 +1,7 @@
+:root{
+  --main-color:color:var(--main-color);;
+}
+
 .skills-panel{
   display: flex;
   justify-content: center;
@@ -25,7 +29,7 @@
 }
 
 .skill-container:hover{
-  border:1px solid rgb(120, 80, 244);
+  border:1px solid color:var(--main-color);;
   background-color: rgb(32, 32, 46);
   transition: background-color 0.2s ease-in-out;
 }
@@ -36,7 +40,7 @@
 }
 
 .skill-container:hover svg{
-  fill:rgb(120, 80, 244);
+  fill:color:var(--main-color);
   transition:0.2s ease-in-out;
 }
 
@@ -71,7 +75,7 @@
   font-size:12px;
 }
 .skill-container:hover .skill-level{
-  color:rgb(120, 80, 244);
+  color:color:var(--main-color);
 }
 
 
