@@ -29,7 +29,7 @@
 }
 
 .skill-container:hover{
-  border:1px solid var(--main-color);
+  border:1px solid rgb(120, 80, 244);
   background- rgb(32, 32, 46);
   transition: background-color 0.2s ease-in-out;
 }
@@ -40,7 +40,7 @@
 }
 
 .skill-container:hover svg{
-  fill:var(--main-color);
+  fill:rgb(120, 80, 244);
   transition:0.2s ease-in-out;
 }
 
