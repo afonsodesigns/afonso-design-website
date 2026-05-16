@@ -1,3 +1,8 @@
+:root{
+  --main-color:rgb(120, 80, 244);
+}
+
+
 .grid-container{
   display: flex;
   justify-content: center;
@@ -15,7 +20,7 @@ section a{
   color:white;
 }
 section a:hover{
-  color:rgb(120, 80, 244);
+  color:color:var(--main-color);
   transition:0.6s ease color;
 }
 
@@ -26,7 +31,7 @@ section a:hover{
   border-radius:10px;
   position: relative;
   cursor:pointer;
-  border:2px solid rgb(120, 80, 244);
+  border:2px solid color:var(--main-color);
 }
 
 .project-container img{
@@ -70,7 +75,7 @@ section a:hover{
 }
 
 .project-container:hover{
-  box-shadow:0 0 50px rgb(120, 80, 244);
+  box-shadow:0 0 50px color:var(--main-color);
   transition:0.2s ease-in-out;
 } 
 
