@@ -68,7 +68,7 @@ nav .button-container button{
   font-weight: 600;
   cursor:pointer;
   transition: 0.2s ease-in-out;
-  border:2px solid var(--main-color);
+  border:2px solid rgb(120, 80, 244);
 }
 
 nav .button-container button:hover{
