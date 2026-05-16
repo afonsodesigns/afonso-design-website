@@ -1,3 +1,7 @@
+:root{
+  --main-color:rgb(120, 80, 244);
+}
+
 #hire_me h3{
   font-size: 30px;
   font-family: Michroma, Sora, Verdana;
@@ -18,14 +22,14 @@
 #hire_me .email-link .my-email{
   color:white;
   cursor: pointer;
-  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-decoration: 1px underline dotted var(--main-color);
   text-underline-offset: 2px;
 }
 
 #hire_me .email-link .my-email:hover{
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
   cursor: pointer;
-  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-decoration: 1px underline dotted var(--main-color);
   text-underline-offset: 6px;
   transition: 0.3s ease-in-out;
 }
@@ -35,7 +39,7 @@
 }
 
 .email-link:hover svg{
-  fill:rgb(120, 80, 244);
+  fill:var(--main-color);
   transition: 0.3s ease-in-out;
 }
 
@@ -51,13 +55,13 @@
 .socials-link a{
   color:white;
   cursor: pointer;
-  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-decoration: 1px underline dotted var(--main-color);
   text-underline-offset: 2px;
 }
 .socials-link a:hover{
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
   cursor: pointer;
-  text-decoration: 1px underline dotted rgb(120, 80, 244);
+  text-decoration: 1px underline dotted var(--main-color);
   text-underline-offset: 6px;
   transition: 0.3s ease-in-out;
 }
@@ -85,7 +89,7 @@
 }
 
 .maker{
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
 }
 
 @media screen and (min-width:1200px){
