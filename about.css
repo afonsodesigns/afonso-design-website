@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root{
+  --main-color:rgb(120, 80, 244);
+}
+
 html{
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -83,7 +87,7 @@ header{
 }
 
 .index-list a:hover{
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
   transition:0.2s ease;
 }
 
@@ -99,11 +103,11 @@ header{
 section h2{
   font-family: Michroma, Sora, Verdana;
   margin:20px 0;
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
 }
 
 section h2:hover{
-  text-decoration: underline dotted rgb(120, 80, 244);
+  text-decoration: underline dotted var(--main-color);
   text-underline-offset: 8px;
 }
 
@@ -144,7 +148,7 @@ section h2:hover{
 }
 
 .skill-container:hover{
-  border:1px solid rgb(120, 80, 244);
+  border:1px solid var(--main-color);
   background-color: rgb(32, 32, 46);
   transition: background-color 0.2s ease-in-out;
 }
@@ -155,7 +159,7 @@ section h2:hover{
 }
 
 .skill-container:hover svg{
-  fill:rgb(120, 80, 244);
+  fill:var(--main-color);
   transition:0.2s ease-in-out;
 }
 
@@ -190,7 +194,7 @@ section h2:hover{
   font-size:12px;
 }
 .skill-container:hover .skill-level{
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
 }
 
 .skills-info{
