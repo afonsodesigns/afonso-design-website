@@ -45,7 +45,7 @@ figcaption{
 .return-page a button:hover, .next-page a button:hover{
   transition: 0.2s ease-in-out;
   border:2px solid rgb(120, 80, 244);
-  color:var(--main-color);;
+  color:var(--main-color);
 }
 
 .bottom-links{
@@ -68,7 +68,7 @@ figcaption{
 }
 
 .poster-container img:hover{
-  box-shadow: 0 0 10px var(--main-color);
+  box-shadow: 0 0 10px rgb(120, 80, 244);
   border:1px solid rgb(120, 80, 244);
   transition:0.2s ease-in-out;
 }
@@ -178,7 +178,7 @@ figcaption{
   margin:80px 0 40px 0;
   padding:60px;
   border-radius: 20px;
-  box-shadow:0 0 10px var(--main-color);
+  box-shadow:0 0 10px rgb(120, 80, 244);
 }
 
 .branding-index{
@@ -532,7 +532,7 @@ figure{
 }
 
 .quick-nav-container img:hover{
-  box-shadow: 0 0 20px var(--main-color);;
+  box-shadow: 0 0 20px rgb(120, 80, 244);
   cursor: pointer;
 }
 
