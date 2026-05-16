@@ -1,3 +1,7 @@
+:root{
+  --main-color:rgb(120, 80, 244);
+}
+
 #projects{
   background-color: transparent;
   height:120px;
@@ -40,7 +44,7 @@
   left:0;
   right:0;
   bottom:0;
-  border:2px solid rgb(120, 80, 244);
+  border:2px solid var(--main-color);
   border-radius:5px;
   display: none;
 }
@@ -68,12 +72,12 @@
   color:white;
   text-decoration: none;
   border-radius:50px;
-  border:2px solid rgb(120, 80, 244);
+  border:2px solid var(--main-color);
   cursor:pointer;
 }
 
 .img-details button:hover{
-  background-color: rgb(120, 80, 244);
+  background-color: var(--main-color);
   color:rgb(31,31,31);
 }
 
@@ -114,17 +118,17 @@
   color:white;
   text-decoration: none;
   border-radius:50px;
-  border:2px solid rgb(120, 80, 244);
-  box-shadow: 0 0 100px rgb(120, 80, 244);
+  border:2px solid var(--main-color);
+  box-shadow: 0 0 100px var(--main-color);
 }
 
 .more-projects-button a span{
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
   margin-right:10px;
 }
 
 .more-projects-button a:hover{
-  background-color: rgb(120, 80, 244);
+  background-color: var(--main-color);
   color:rgb(17, 17, 17);
   transition:0.3s ease-in-out;
   cursor:pointer;
@@ -160,7 +164,7 @@
   color:white;
   text-decoration: none;
   border-radius:50px;
-  border:2px solid rgb(120, 80, 244);
+  border:2px solid var(--main-color);
 }
 }
 
@@ -178,7 +182,7 @@
     margin-top:15px;
   }
   .like-container .more-projects-button a{
-    box-shadow: 0 0 50px rgb(120, 80, 244);
+    box-shadow: 0 0 50px var(--main-color);
   }
 }
 
