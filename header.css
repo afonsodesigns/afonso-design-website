@@ -1,3 +1,7 @@
+:root{
+  --main-color:rgb(120, 80, 244);
+}
+
 header{
   font-family: "Michroma", "Sora", "Verdana";
 }
@@ -17,7 +21,7 @@ header{
   text-align: center;
   padding:5px;
   font-size: 22px;
-  color:rgb(120, 80, 244);
+  color:var(--main-color);
 }
 
 .carousel{
