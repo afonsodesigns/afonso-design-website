@@ -44,7 +44,7 @@
   left:0;
   right:0;
   bottom:0;
-  border:2px solid var(--main-color);
+  border:2px solid rgb(120, 80, 244);
   border-radius:5px;
   display: none;
 }
@@ -72,7 +72,7 @@
   color:white;
   text-decoration: none;
   border-radius:50px;
-  border:2px solid var(--main-color);
+  border:2px solid rgb(120, 80, 244);
   cursor:pointer;
 }
 
@@ -118,7 +118,7 @@
   color:white;
   text-decoration: none;
   border-radius:50px;
-  border:2px solid var(--main-color);
+  border:2px solid rgb(120, 80, 244);
   box-shadow: 0 0 100px var(--main-color);
 }
 
@@ -164,7 +164,7 @@
   color:white;
   text-decoration: none;
   border-radius:50px;
-  border:2px solid var(--main-color);
+  border:2px solid rgb(120, 80, 244);
 }
 }
 
