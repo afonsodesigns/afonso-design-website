@@ -29,7 +29,7 @@
 
 form{
   background-image: radial-gradient(rgba(80, 83, 244, 0.2), rgb(17,17,17));
-  border:4px solid var(--main-color);
+  border:4px solid rgb(120, 80, 244);
   box-shadow:0 0 80px var(--main-color);
   padding:60px; 
   border-radius:20px;
