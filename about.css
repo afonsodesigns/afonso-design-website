@@ -138,11 +138,11 @@ section h2:hover{
 .skill-container{
   height:550px;
   min-width:250px;
-  -radius:10px;
+  border-radius:10px;
   margin:5px;
   background-color: rgb(31, 28, 37);
   padding:20px;
-  :1px solid rgb(144, 131, 184);
+  border:1px solid rgb(144, 131, 184);
   overflow: scroll;
   scrollbar-width: none;
 }
