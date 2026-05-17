@@ -20,7 +20,7 @@ section a{
   color:white;
 }
 section a:hover{
-  color:color:var(--main-color);
+  color: rgb(120, 80, 244);
   transition:0.6s ease color;
 }
 
@@ -75,7 +75,7 @@ section a:hover{
 }
 
 .project-container:hover{
-  box-shadow:0 0 50px color:var(--main-color);
+  box-shadow:0 0 50px rgb(120, 80, 244);
   transition:0.2s ease-in-out;
 } 
 
