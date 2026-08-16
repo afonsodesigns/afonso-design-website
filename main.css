@@ -140,6 +140,88 @@
   color:rgb(17, 17, 17);
 }
 
+/*faq section*/
+
+.faq-container{
+  margin:0 0 40px 20px;
+}
+
+.faq-header{
+  font-size:30px;
+  margin-bottom:20px;
+  font-family: "Michroma", "Sora", "Verdana";
+}
+
+.faq-desc{
+  font-size:18px;
+}
+
+.faq-desc a{
+  color: var(--main-color);
+}
+
+.qa-container{
+  margin:0 0 30px 20px;
+  background-color: rgba(9, 8, 27, 0.3); 
+  border-radius:12px;
+  padding:20px;
+}
+
+.question-container{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.answer-container{
+  line-height: 28px;
+}
+
+.answer-container a{
+  color:white;
+  cursor: pointer;
+  text-decoration: 3px underline dotted var(--main-color);
+  text-underline-offset: 2px;
+}
+
+.answer-container a:hover{
+  color:var(--main-color);
+  cursor: pointer;
+  text-decoration: 3px underline dotted var(--main-color);
+  text-underline-offset: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-cta{
+  margin-top:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+}
+
+.contact-btn{
+  padding:15px 25px;
+  font-size:22px;
+  text-decoration: none;
+  border-radius:50px;
+  color:white;
+  background-color: rgb(17, 17, 17);
+  border:2px solid rgb(120, 80, 244);
+  box-shadow:0 0 100px var(--main-color);
+  font-family:"Sora", "Verdana";
+}
+
+.contact-btn:hover{
+  color:rgb(17, 17, 17);
+  background-color: var(--main-color);
+  transition:0.3s ease-in-out;
+  cursor:pointer;
+  box-shadow: none;
+}
+/**/
+
 /*_______*/
 
 @media screen and (width <= 1250px) {
